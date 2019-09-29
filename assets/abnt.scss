@@ -1,0 +1,56 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .42cm;
+}
+
+.page {
+  padding: 3cm 2cm 2cm 3cm;
+}
+
+.capa {
+  grid-template-rows: auto auto 3fr auto 12fr auto auto 14fr auto auto;
+  /* grid-template-columns: 1fr; */
+  display: grid;
+  text-transform: uppercase;
+  text-align: center;
+  grid-template-areas:
+    "capa__nome-da-instituição"
+    "capa__nome-do-curso"
+    "."
+    "capa__nome-do-autor"
+    "."
+    "capa__título-do-trabalho"
+    "capa__subtítulo"
+    "."
+    "capa__cidade"
+    "capa__ano";
+}
+
+.capa__nome-da-instituição {
+  grid-area: capa__nome-da-instituição;
+}
+
+.capa__nome-do-curso {
+  grid-area: capa__nome-do-curso;
+}
+
+.capa__nome-do-autor {
+  grid-area: capa__nome-do-autor;
+}
+
+.capa__título-do-trabalho {
+  grid-area: capa__título-do-trabalho;
+  font-weight: bold;
+}
+
+.capa__subtítulo {
+  grid-area: capa__subtítulo;
+}
+
+.capa__cidade {
+  grid-area: capa__cidade;
+}
+
+.capa__ano {
+  grid-area: capa__ano;
+}

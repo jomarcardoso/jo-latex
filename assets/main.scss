@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dedede;
+}
+
+.page {
+  background-color: white;
+  width: 210mm;
+  height: 297mm;
+  margin: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+}
+
+@media print {
+  @page {
+    size: auto;   /* auto is the initial value */
+    margin: 0;  /* this affects the margin in the printer settings */
+  }
+
+  body {
+    background-color: initial;
+  }
+
+  .page {
+    page-break-after: always;
+    margin: 0;
+    box-shadow: initial;
+  }
+}
